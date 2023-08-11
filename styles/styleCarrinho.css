@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --corBackground:  #9b0039;
+    --corBackgroundSection:  #e6e6e6;
+    --corFontes: white;
+    --corHover: #420c03;
+}
+
+body{
+    background-image: url(/img/telaFundo.jpg);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 960px;
+    background-color: #ccc;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {    
+    background-color:var(--corBackground);
+    color: var(--corFontes);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+header h1{
+    font-size: 60px;
+}
+
+nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color:var(--corFontes);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+nav a:hover {
+    background-color: var(--corFontes);
+    border-radius: 10px;
+    font-weight: bolder;
+    color:var(--corBackground);
+}
+
+
+h2 {
+    color: var(--corBackground);
+    margin-top: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    max-width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    
+}
+
+li .item-img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Estilizando o botão "Ir para carrinho" */
+button {
+    background-color: var(--corBackground);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: var(--corHover);
+}
+
+/* Estilizando o total do pedido */
+p.total {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/* Estilo para o botão "Enviar Pedido pelo WhatsApp" */
+.enviar-pedido {
+    background-color: var(--corBackground);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.enviar-pedido:hover {
+    background-color: cor;
+    
+}
+
+/* Estilizando o footer */
+footer {
+    background-color:var(--corBackground);
+    color:var(--corFontes);
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    margin: 0 20px;
+    text-align: center;
+}
+
+footer img{
+    height: 30px ;
+    margin: 10px;
+}

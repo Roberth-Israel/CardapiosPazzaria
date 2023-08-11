@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&family=Sora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-serifada:'Abril FatFace', serif;
+    --font-sem-serifa: 'Lato & family', sans-serif; 
+    --cor-botoes: #E1AB33;
+    --cor-menu: #852216;
+    --cor-fonte-suave: #cacaca;
+    --cor-fontes: #ffffff; 
+}
+
+
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 65%;
+    overflow-x: hidden;
+}
+
+
+header {    
+    background-color:var(--cor-menu);
+    color: var(--cor-fontes);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+header h1{
+    font-size: 3rem;
+    align-self: baseline;
+}
+
+
+
+nav {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    align-self: baseline;
+}
+
+nav a {
+    
+    color:var(--cor-fontes);
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0rem 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    background-color: var(--cor-fontes);
+    color: var(--cor-menu);
+    border-radius: 10px;
+    
+    
+}
+
+
+
+/* Primeira Seção */
+
+.principal{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(planoFundo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal .conteudo-principal{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.principal h1{
+    color: #ffc506;
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Abril FatFace';
+}
+
+.principal h2{
+    color: rgb(177, 177, 177);
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--font-sem-serifa);
+    margin: 2rem;
+}
+
+.btn button {
+    width: 250px;
+    height: 60px;
+    text-transform: uppercase;
+    background-color:var(--cor-botoes);
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    margin: 3rem 2rem;
+}
+
+.btn button:hover {
+    background-color: var(--cor-menu);
+    color: var(--cor-fontes);
+
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;   
+   
+}
+
+
+/* Sobre nós */
+
+.sobre-nos {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: space-around;
+}
+.contentsobre { 
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre img {
+    width: 400px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+}
+
+.main h2 {
+   text-align: center;
+   font-size: 4rem;
+   margin-bottom: 4rem;
+   font-family: var(--font-serifada);
+
+}
+
+.contentsobre p {
+   text-align: justify;
+   font-size: 2rem;
+   font-weight: 400;
+   font-family: var(--font-sem-serifa);
+   color: var(--cor-fonte-suave);
+  
+}
+
+/* rodapé */
+
+footer {
+    background-color:var(--cor-menu);
+    color:var(--cor-fontes);
+    padding: 2rem;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+footer div{
+    margin: 0 2rem;
+    text-align: center;
+}
+
+footer img{
+    height: 3rem ;
+    margin: 1rem;
+}

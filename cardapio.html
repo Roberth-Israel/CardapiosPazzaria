@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massa Mia</title>
+    <link rel="stylesheet" href="styles/styleCardapio.css">
+    <!-- Importação do Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Importação do Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   
+</head>
+
+<body>
+	<header>
+		<h1>Pizzaria Massa Mia</h1> 
+		<nav>
+            <a href="#">Página Inicial</a>
+			<a href="#doces">Pizzas Doces</a>
+			<a href="#salgadas">Pizzas Salgadas</a>
+            <a href="#">Calzones</a>
+			<a href="#bebidas">Bebidas</a>
+            <a href="carrinho.html">Meu Carrinho</a>
+		</nav>
+	</header>
+    <main>
+
+        
+        <section id="doces">
+            <h2>Pizzas Doces</h2>
+            <ul>
+                <li data-nome="Pizza de Abacaxi" id="item-abacaxi">
+                    <img src="img/abacaxi.png" alt="Pizza de Abacaxi">
+                    <p class="name">Abacaxi</p>
+                    <p class="description">A suculenta Pizza de Abacaxi é uma verdadeira explosão de sabores tropicais. Deliciosos pedaços de abacaxi fresco são harmoniosamente combinados com uma generosa camada de queijo derretido, resultando em um contraste perfeito entre o doce da fruta e a cremosidade do queijo. Cada mordida é uma experiência única e satisfatória, ideal para aqueles que buscam uma opção doce e saborosa para suas pizzas.</p>
+                    <p class="price">R$ 35,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-abacaxi')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-abacaxi')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-abacaxi','Pizza de Abacaxi', 35.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                </li>
+                <li  data-nome="Pizza de Morango com Chocolate" id="item-morango">
+                    <img src="img/morangoChocolate.jpg" alt="Pizza de Morango com Chocolate">
+                    <p class="name">Morango com Chocolate</p>
+                    <p class="description">Para os amantes de chocolate, a Pizza de Morango com Chocolate é a escolha perfeita. Recheada com morangos frescos e coberta com uma deliciosa camada de chocolate derretido, essa pizza doce é uma tentação irresistível. A combinação do sabor adocicado dos morangos com a riqueza do chocolate cria uma experiência gastronômica única, perfeita para momentos especiais ou para saciar aquela vontade por algo doce.</p>
+                    <p class="price">R$ 40,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-morango')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-morango')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-morango','Pizza de Morango', 35.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                </li>
+                <li data-nome="Pizza de Romeu e Julieta" id="item-romeu-julieta">
+                    <img src="img/romeuJulieta.jpg" alt="Pizza de Romeu e Julieta">
+                    <p class="name"> Romeu e Julieta</p>
+                    <p class="description">Inspirada na clássica combinação de queijo e goiabada, a Pizza de Romeu e Julieta é uma verdadeira iguaria. O queijo derretido se une à doçura da goiabada em uma harmonia de sabores surpreendente. Cada pedaço oferece uma experiência única que mescla a cremosidade do queijo com o sabor autêntico da goiabada, proporcionando uma delícia para o paladar.</p>
+                    <p class="price">R$ 35,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-romeu-julieta')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-romeu-julieta')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-romeu-julieta','Pizza de Romeu e Julieta', 35.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                </li>
+            </ul>
+        </section>
+    
+        <section id="salgadas">
+            <h2>Pizzas Salgadas</h2>
+            <ul>
+                <li data-nome="Pizza de Calabresa" id="item-calabresa">
+                    <img src="img/calabresa.png" alt="Calabresa">
+                    <p class="name">Calabresa</p>
+                    <p class="description">A famosa e tradicional Calabresa é uma pizza clássica que nunca sai de moda. Generosas fatias de linguiça calabresa, cebola e queijo derretido são perfeitamente combinadas, resultando em uma explosão de sabores irresistíveis. A crocância da massa, o sabor picante da calabresa e a cremosidade do queijo criam uma experiência gastronômica reconfortante e deliciosa.</p>
+                    <p class="price">R$ 35,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-calabresa')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-calabresa')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-calabresa', 'Pizza de Calabresa', 35.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                    <li data-nome="Pizza de Frango com Requeijão" id="item-frango-requeijao">
+                        <img src="img/frango.png" alt="Frango com requeijão">
+                        <p class="name">Frango com Requeijão</p>
+                        <p class="description">A Pizza de Frango com Requeijão é uma opção irresistível para os amantes de frango. O frango desfiado é harmoniosamente combinado com o requeijão cremoso, criando uma textura aveludada e um sabor marcante. A cada mordida, é possível sentir a suculência do frango e a cremosidade do requeijão, proporcionando uma experiência gastronômica repleta de sabores deliciosos.</p>
+                        <p class="price">R$ 40,00</p>
+                        <div class="item-quantity">
+                            <p>Quantidade:</p>
+                            <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-frango-requeijao')">-</button>
+                            <span class="quantity">1</span>
+                            <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-frango-requeijao')">+</button>
+                        </div>
+                        <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-frango-requeijao', 'Pizza de Frango com Requeijão', 40.00)">
+                            <i class="material-icons left">shopping_cart</i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </li>
+                    <li data-nome="Pizza Quatro Queijos" id="item-quatro-queijos">
+                        <img src="img/4queijos.jpg" alt="Pizza 4 queijos">
+                        <p class="name">Quatro Queijos</p>
+                        <p class="description">A Pizza Quatro Queijos é uma verdadeira celebração para os amantes de queijo. Mussarela, parmesão, provolone e gorgonzola se unem em uma harmonia de sabores marcantes e texturas diferentes. Cada pedaço oferece uma combinação única de sabores, com o contraste do queijo suave da mussarela com o sabor intenso do gorgonzola, criando uma experiência gastronômica inesquecível.</p>
+                        <p class="price">R$ 35,00</p>
+                        <div class="item-quantity">
+                            <p>Quantidade:</p>
+                            <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-quatro-queijos')">-</button>
+                            <span class="quantity">1</span>
+                            <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-quatro-queijos')">+</button>
+                        </div>
+                        <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-quatro-queijos', 'Pizza Quatro Queijos', 35.00)">
+                            <i class="material-icons left">shopping_cart</i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </li>
+
+                    <li data-nome="Pizza de Pepperoni" id="item-pepperoni">
+                        <img src="img/pizza_pepperoni.jpg" alt="Pizza de Pepperoni">
+                        <p class="name">Pepperoni</p>
+                        <p class="description">A clássica e irresistível Pizza de Pepperoni é uma das favoritas entre os amantes de pizzas. Generosas fatias de pepperoni levemente picante são distribuídas sobre uma camada de queijo derretido, garantindo uma combinação perfeita de sabores e uma textura crocante. Essa opção é ideal para quem busca uma pizza tradicional e saborosa.</p>
+                        <p class="price">R$ 38,00</p>
+                        <div class="item-quantity">
+                            <p>Quantidade:</p>
+                            <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-pepperoni')">-</button>
+                            <span class="quantity">1</span>
+                            <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-pepperoni')">+</button>
+                        </div>
+                        <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-pepperoni', 'Pizza de Pepperoni', 35.00)">
+                            <i class="material-icons left">shopping_cart</i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </li>
+
+                    <li data-nome="Pizza Margherita" id="item-margherita">
+                        <img src="img/pizza_marguerita.jpg" alt="Pizza Margherita">
+                        <p class="name">Margherita</p>
+                        <p class="description">Inspirada na clássica receita italiana, a Pizza Margherita é uma verdadeira homenagem aos sabores tradicionais. Fatias de tomate maduro, queijo mussarela fresco e folhas de manjericão são combinados sobre uma fina camada de molho de tomate, resultando em uma pizza simples, porém cheia de sabor. Essa opção é perfeita para quem aprecia o sabor autêntico e fresco dos ingredientes.</p>
+                        <p class="price">R$ 32,00</p>
+                        <div class="item-quantity">
+                            <p>Quantidade:</p>
+                            <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-margherita')">-</button>
+                            <span class="quantity">1</span>
+                            <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-margherita')">+</button>
+                        </div>
+                        <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-margherita', 'Pizza Margherita', 35.00)">
+                            <i class="material-icons left">shopping_cart</i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </li>
+
+                    <li data-nome="Pizza Vegetariana" id="item-vegetariana">
+                        <img src="img/pizza_vegetariana.jpg" alt="Pizza Vegetariana">
+                        <p class="name">Vegetariana</p>
+                        <p class="description">Para os apreciadores de uma refeição mais leve e saudável, a Pizza Vegetariana é a escolha perfeita. Repleta de legumes frescos e coloridos, como pimentão, cebola, azeitonas, tomate e cogumelos, essa pizza oferece uma explosão de sabores naturais e texturas deliciosas. Com a combinação do queijo derretido, cada pedaço é uma verdadeira festa para o paladar.</p>
+                        <p class="price">R$ 35,00</p>
+                        <div class="item-quantity">
+                            <p>Quantidade:</p>
+                            <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-vegetariana')">-</button>
+                            <span class="quantity">1</span>
+                            <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-vegetariana')">+</button>
+                        </div>
+                        <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-vegetariana', 'Pizza Vegetariana', 35.00)">
+                            <i class="material-icons left">shopping_cart</i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </li>
+                    
+                    
+                    
+            </ul>
+        </section>
+
+        <section id="calzones">
+            <h2>Calzones</h2>
+            <ul>
+                <li>
+                    <img src="img/calzone-frango-cheaddar.jpg" alt="Calzone de Frango com Cheddar">
+                    <p class="name">Calzone de Frango com Cheddar</p>
+                    <p class="description">O Calzone de Frango com Cheddar é uma escolha perfeita para quem busca uma refeição reconfortante e saborosa. O frango desfiado e o cheddar cremoso se combinam em uma textura irresistível, envoltos em uma massa crocante e dourada. Cada mordida revela uma experiência única de sabores, tornando este calzone uma opção deliciosa para qualquer ocasião.</p>
+                    <p class="price">R$ 25,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('calzone-frango-cheddar')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('calzone-frango-cheddar')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('calzone-frango-cheddar', 'Calzone de Frango com Cheddar', 25.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                </li>
+                <li>
+                    <img src="img/calzone-queijo_presunto.jpg" alt="Calzone de Queijo e Presunto">
+                    <p class="name">Calzone de Queijo e Presunto</p>
+                    <p class="description">O Calzone de Queijo e Presunto é uma opção clássica e satisfatória para os amantes de sabores simples e reconfortantes. O generoso recheio de queijo e presunto de alta qualidade proporciona uma experiência gastronômica de sabor autêntico e delicioso. Com a massa dourada e crocante, cada pedaço é uma verdadeira tentação.</p>
+                    <p class="price">R$ 22,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('calzone-queijo-presunto')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('calzone-queijo-presunto')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('calzone-queijo-presunto', 'Calzone de Queijo e Presunto', 22.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                </li>
+                <li>
+                    <img src="img/calzone-vegetariano.jpg" alt="Calzone Vegetariano">
+                    <p class="name">Calzone Vegetariano</p>
+                    <p class="description">O Calzone Vegetariano é uma opção leve e saudável para aqueles que preferem uma refeição à base de legumes frescos. Recheado com uma seleção de vegetais e queijo derretido, este calzone oferece uma explosão de sabores naturais e texturas deliciosas. Cada mordida é uma experiência rica em sabor, tornando este calzone uma escolha saborosa para todos os paladares.</p>
+                    <p class="price">R$ 20,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('calzone-vegetariano')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('calzone-vegetariano')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('calzone-vegetariano', 'Calzone Vegetariano', 20.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                </li>
+            </ul>
+        </section>
+        
+    
+        <section id="bebidas">
+            <h2>Bebidas</h2>
+            <ul>
+                <li data-nome="Coca-Cola" id="item-coca-cola">
+                    <img src="img/coca.jpg" alt="Coca-Cola">
+                    <p class="name">Coca-Cola</p>
+                    <p class="description">A clássica e refrescante Coca-Cola é a companhia perfeita para acompanhar sua refeição. Seu sabor inconfundível e borbulhante proporciona um momento de prazer e satisfação a cada gole, tornando-a uma das bebidas mais populares e adoradas em todo o mundo.</p>
+                    <p class="price">R$ 35,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-coca-cola')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-coca-cola')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-coca-cola', 'Coca-Cola', 35.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                </li>
+                <li data-nome="Suco de Laranja" id="item-suco-laranja">
+                    <img src="img/suco laranja.jpg" alt="Suco de Laranja">
+                    <p class="name">Suco Laranja</p>
+                    <p class="description">O Suco de Laranja é uma opção saudável e revigorante para os amantes de bebidas naturais. Feito com laranjas frescas e suculentas, esse suco oferece uma explosão de sabor cítrico e refrescante, sendo a escolha perfeita para matar a sede e desfrutar de um momento de frescor.</p>
+                    <p class="price">R$ 8,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-suco-laranja')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-suco-laranja')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-suco-laranja', 'Suco de Laranja', 8.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                </li>
+                <li data-nome="Água 500ml" id="item-agua">
+                    <img src="img/agua.jpg" alt="Agua sem gás ">
+                    <p class="name">Água 500ml</p>
+                    <p class="description">A Água 500ml é uma opção essencial para manter-se hidratado e saudável. Com sua pureza e leveza, ela oferece o frescor necessário para saciar a sede e garantir uma experiência agradável a qualquer momento do dia.</p>
+                    <p class="price">R$ 5,00</p>
+                    <div class="item-quantity">
+                        <p>Quantidade:</p>
+                        <button class="btn red custom-btn-quantity" onclick="decrementQuantity('item-agua')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="btn red custom-btn-quantity" onclick="incrementQuantity('item-agua')">+</button>
+                    </div>
+                    <button class="btn red custom-btn-carrinho" onclick="adicionarAoCarrinho('item-agua', 'Água 500ml', 5.00)">
+                        <i class="material-icons left">shopping_cart</i>
+                        Adicionar ao Carrinho
+                    </button>
+                </li>
+            </ul>
+
+            <div id="carrinho-container">
+
+                <!-- Lista de itens do carrinho será inserida aqui -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>                    
+        <div >
+            <p>Telefone: (11) 5555-5555</p>
+            <p>Email: contato@pizzaria.com</p>
+        </div>
+        
+        <div >
+            <h3>Nos siga nas redes sociais</h3>
+            <a href="#"><img src="img/face.png" alt=""></a>
+            <a href="#"><img src="img/insta.png" alt=""></a>
+           
+        </div>         
+    </footer>
+  
+    
+
+
+    <script src="/scripts/scriptCardapio.js"></script>
+	
+</body>
+</html>
